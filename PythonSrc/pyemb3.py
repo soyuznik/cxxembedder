@@ -119,9 +119,11 @@ def get_elem_NAME(ELEMDATA):
     elements_list.append(element3);
 
 def click_ELEMENT(ELEMNUMBER):
+    global elements_list;
     elements_list[int(ELEMNUMBER)].click()
 
 def type_ELEMENT(ELEMNUMBER , TEXT):
+    global elements_list;
     elements_list[int(ELEMNUMBER)].send_keys(TEXT)
 
 def driver_QUIT():
@@ -132,9 +134,9 @@ def driver_QUIT():
 def driver_WAIT(sec):
     driver.implicitly_wait(int(sec)) # seconds
 
-init_selenium(" ")
-get_search("https://www.google.com/")
-get_elem_NAME("q")
-click_ELEMENT("0")
-type_ELEMENT("0" , "HELLO")
-type_ELEMENT("0" , u'\ue007')
+
+
+
+
+
+

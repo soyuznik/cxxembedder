@@ -5,6 +5,8 @@
 #include <iostream>
 #include <string>
 #include <filesystem>
+#include <python/pyhelper.hpp>
+
 
 using namespace std;
 #define PYSRCDIR "/PythonSrc/"
@@ -14,71 +16,76 @@ PyObject* pArgs, * pValue;
 int i;
 string file;
 
+
+
 namespace Keys {
-   char     ADD = '\ue025'         ;
-   char     ALT = '\ue00a'         ;
-   char     ARROW_DOWN = '\ue015'  ;
-   char     ARROW_LEFT = '\ue012'  ;
-   char     ARROW_RIGHT = '\ue014' ;
-   char     ARROW_UP = '\ue013'    ;
-   char     BACKSPACE = '\ue003'   ;
-   char     BACK_SPACE = '\ue003'  ;
-   char     CANCEL = '\ue001'      ;
-   char     CLEAR = '\ue005'       ;
-   char     COMMAND = '\ue03d'     ;
-   char     CONTROL = '\ue009'     ;
-   char     DECIMAL = '\ue028'     ;
-   char     DELETE = '\ue017'      ;
-   char     DIVIDE = '\ue029'      ;
-   char     DOWN = '\ue015'        ;
-   char     END = '\ue010'         ;
-   char     ENTER = '\ue007'       ;
-   char     EQUALS = '\ue019'      ;
-   char     ESCAPE = '\ue00c'      ;
-   char     F1 = '\ue031'          ;
-   char     F10 = '\ue03a'         ;
-   char     F11 = '\ue03b'         ;
-   char     F12 = '\ue03c'         ;
-   char     F2 = '\ue032'          ;
-   char     F3 = '\ue033'          ;
-   char     F4 = '\ue034'          ;
-   char     F5 = '\ue035'          ;
-   char     F6 = '\ue036'          ;
-   char     F7 = '\ue037'          ;
-   char     F8 = '\ue038'          ;
-   char     F9 = '\ue039'          ;
-   char     HELP = '\ue002'        ;
-   char     HOME = '\ue011'        ;
-   char     INSERT = '\ue016'      ;
-   char     LEFT = '\ue012'        ;
-   char     LEFT_ALT = '\ue00a'    ;
-   char     LEFT_CONTROL = '\ue009';
-   char     LEFT_SHIFT = '\ue008'  ;
-   char     META = '\ue03d'        ;
-   char     MULTIPLY = '\ue024'    ;
-   char     NUMPAD0 = '\ue01a'     ;
-   char     NUMPAD1 = '\ue01b'     ;
-   char     NUMPAD2 = '\ue01c'     ;
-   char     NUMPAD3 = '\ue01d'     ;
-   char     NUMPAD4 = '\ue01e'     ;
-   char     NUMPAD5 = '\ue01f'     ;
-   char     NUMPAD6 = '\ue020'     ;
-   char     NUMPAD7 = '\ue021'     ;
-   char     NUMPAD8 = '\ue022'     ;
-   char     NUMPAD9 = '\ue023'     ;
-   char     PAGE_DOWN = '\ue00f'   ;
-   char     PAGE_UP = '\ue00e'     ;
-   char     PAUSE = '\ue00b'       ;
-   char     RETURN = '\ue006'      ;
-   char     RIGHT = '\ue014'       ;
-   char     SEMICOLON = '\ue018'   ;
-   char     SEPARATOR = '\ue026'   ;
-   char     SHIFT = '\ue008'       ;
-   char     SPACE = '\ue00d'       ;
-   char     SUBTRACT = '\ue027'    ;
-   char     TAB = '\ue004'         ;
-   char     UP = '\ue013'          ;
-}
+    string     ADD = string{ '\ue025' };
+    string     ALT = string{ '\ue00a' };
+    string     ARROW_DOWN = string{ '\ue015' };
+    string     ARROW_LEFT = string{ '\ue012' };
+    string     ARROW_RIGHT = string{ '\ue014' };
+    string     ARROW_UP = string{ '\ue013' };
+    string     BACKSPACE = string{ '\ue003' };
+    string     BACK_SPACE = string{ '\ue003' };
+    string     CANCEL = string{ '\ue001' };
+    string     CLEAR = string{ '\ue005' };
+    string     COMMAND = string{ '\ue03d' };
+    string     CONTROL = string{ '\ue009' };
+    string     DECIMAL = string{ '\ue028' };
+    string     DELETE = string{ '\ue017' };
+    string     DIVIDE = string{ '\ue029' };
+    string     DOWN = string{ '\ue015' };
+    string     END = string{ '\ue010' };
+    string     ENTER = string{ '\ue007' };
+    string     EQUALS = string{ '\ue019' };
+    string     ESCAPE = string{ '\ue00c' };
+    string     F1 = string{ '\ue031' };
+    string     F10 = string{ '\ue03a' };
+    string     F11 = string{ '\ue03b' };
+    string     F12 = string{ '\ue03c' };
+    string     F2 = string{ '\ue032' };
+    string     F3 = string{ '\ue033' };
+    string     F4 = string{ '\ue034' };
+    string     F5 = string{ '\ue035' };
+    string     F6 = string{ '\ue036' };
+    string     F7 = string{ '\ue037' };
+    string     F8 = string{ '\ue038' };
+    string     F9 = string{                     '\ue039'          };
+    string     HELP = string{                     '\ue002'        };
+    string     HOME = string{                  '\ue011'        };
+    string     INSERT = string{               '\ue016'      };
+    string     LEFT = string{                '\ue012'        };
+    string     LEFT_ALT = string{                  '\ue00a'    };
+    string     LEFT_CONTROL = string{                               '\ue009'};
+    string     LEFT_SHIFT = string{                             '\ue008'  };
+    string     META = string{                   '\ue03d'        };
+    string     MULTIPLY = string{                '\ue024'    };
+    string     NUMPAD0 = string{                          '\ue01a'     };
+    string     NUMPAD1 = string{                          '\ue01b'     };
+    string     NUMPAD2 = string{                          '\ue01c'     };
+    string     NUMPAD3 = string{                          '\ue01d'     };
+    string     NUMPAD4 = string{                          '\ue01e'     };
+    string     NUMPAD5 = string{                          '\ue01f'     };
+    string     NUMPAD6 = string{                          '\ue020'     };
+    string     NUMPAD7 = string{                          '\ue021'     };
+    string     NUMPAD8 = string{                          '\ue022'     };
+    string     NUMPAD9 = string{                          '\ue023'     };
+    string     PAGE_DOWN = string{              '\ue00f'   };
+    string     PAGE_UP = string{               '\ue00e'     };
+    string     PAUSE = string{              '\ue00b'       };
+    string     RETURN = string{                '\ue006'      };
+    string     RIGHT = string{                 '\ue014'       };
+    string     SEMICOLON = string{                     '\ue018'   };
+    string     SEPARATOR = string{             '\ue026'   };
+    string     SHIFT = string{                      '\ue008'       };
+    string     SPACE = string{                    '\ue00d'       };
+    string     SUBTRACT = string{                  '\ue027'    };
+    string     TAB = string{                   '\ue004'         };
+    string     UP = string{                        '\ue013' };
+    }
+
+
+
 
 inline int  __initialize_path(string __file) {
     file = __file;
@@ -203,8 +210,7 @@ inline int __callpy_warg(string funcptr, vector<string>* args) {
  */
 int main()
 {
-    Py_Initialize();// ENTRY PYTHON
-
+    CPyInstance inst;
 
     __initialize_path("pyemb3");
     std::vector<string>* vec1 = new std::vector<string>;
@@ -217,11 +223,9 @@ int main()
     __callpy_warg("get_search", vec2);
     delete vec2;
 
-    ///html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[1]/div/div[2]/input
-
     std::vector<string>* vec3 = new std::vector<string>;
-    vec3->push_back("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[1]/div/div[2]/input");
-    __callpy_warg("get_elem_XPATH", vec3);
+    vec3->push_back("q");
+    __callpy_warg("get_elem_NAME", vec3);
     delete vec3;
 
     std::vector<string>* vec4 = new std::vector<string>;
@@ -229,7 +233,20 @@ int main()
     __callpy_warg("click_ELEMENT", vec4);
     delete vec4;
 
-    Py_Finalize(); // EXIT PYTHON
-    
+
+    std::vector<string>* vec5 = new std::vector<string>;
+    vec5->push_back("0");
+    vec5->push_back("HELLO");
+    __callpy_warg("type_ELEMENT", vec5);
+    delete vec5;
+
+    std::vector<string>* vec6 = new std::vector<string>;
+    vec6->push_back("0");
+    vec6->push_back(Keys::ENTER);
+    __callpy_warg("type_ELEMENT", vec6);
+    delete vec6;
+
+
+
    
 }
