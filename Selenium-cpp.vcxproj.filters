@@ -22,4 +22,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PythonSrc\pyemb3.py">
+      <Filter>Python Source</Filter>
+    </None>
+  </ItemGroup>
 </Project>

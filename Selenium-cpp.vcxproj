@@ -121,6 +121,9 @@
   <ItemGroup>
     <ClCompile Include="MAIN.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="PythonSrc\pyemb3.py" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
