@@ -1,3 +1,0 @@
-﻿  MAIN.cpp
-C:\Users\user\Documents\GitHub\Selenium-embedded-in-cpp\Selenium-embedded-in-cpp\MAIN.cpp(48,29): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
-  Selenium-cpp.vcxproj -> C:\Users\user\Documents\GitHub\Selenium-embedded-in-cpp\Selenium-embedded-in-cpp\x64\Release\Selenium-cpp.exe
