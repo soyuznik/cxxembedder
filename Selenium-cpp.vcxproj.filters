@@ -26,5 +26,11 @@
     <None Include="PythonSrc\pyemb3.py">
       <Filter>Python Source</Filter>
     </None>
+    <None Include="PythonSrc\pyemb1.py">
+      <Filter>Python Source</Filter>
+    </None>
+    <None Include="PythonSrc\pyemb2.py">
+      <Filter>Python Source</Filter>
+    </None>
   </ItemGroup>
 </Project>
