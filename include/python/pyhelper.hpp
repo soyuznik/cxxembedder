@@ -4,11 +4,7 @@
 
 #include <python/Python.h>
 
-#define IGNORE_EXCEPTIONS(stmt) \
-try {                           \
-  stmt ;                        \
-} catch (...) {                 \
-}
+
 class CPyInstance
 {
 public:
@@ -18,7 +14,7 @@ public:
 	}
 
 	~CPyInstance(){
-		IGNORE_EXCEPTIONS(Py_Finalize());	
+		Py_Finalize();	
 	}
 };
 
