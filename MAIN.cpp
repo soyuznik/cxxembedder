@@ -17,71 +17,7 @@ string file;
 
 
 
-namespace Keys {
-    string     ADD = string{ '\ue025' };
-    string     ALT = string{ '\ue00a' };
-    string     ARROW_DOWN = string{ '\ue015' };
-    string     ARROW_LEFT = string{ '\ue012' };
-    string     ARROW_RIGHT = string{ '\ue014' };
-    string     ARROW_UP = string{ '\ue013' };
-    string     BACKSPACE = string{ '\ue003' };
-    string     BACK_SPACE = string{ '\ue003' };
-    string     CANCEL = string{ '\ue001' };
-    string     CLEAR = string{ '\ue005' };
-    string     COMMAND = string{ '\ue03d' };
-    string     CONTROL = string{ '\ue009' };
-    string     DECIMAL = string{ '\ue028' };
-    string     DELETE = string{ '\ue017' };
-    string     DIVIDE = string{ '\ue029' };
-    string     DOWN = string{ '\ue015' };
-    string     END = string{ '\ue010' };
-    string     ENTER = string{ '\ue007' }; //U+2386
-    string     EQUALS = string{ '\ue019' };
-    string     ESCAPE = string{ '\ue00c' };
-    string     F1 = string{ '\ue031' };
-    string     F10 = string{ '\ue03a' };
-    string     F11 = string{ '\ue03b' };
-    string     F12 = string{ '\ue03c' };
-    string     F2 = string{ '\ue032' };
-    string     F3 = string{ '\ue033' };
-    string     F4 = string{ '\ue034' };
-    string     F5 = string{ '\ue035' };
-    string     F6 = string{ '\ue036' };
-    string     F7 = string{ '\ue037' };
-    string     F8 = string{ '\ue038' };
-    string     F9 = string{ '\ue039' };
-    string     HELP = string{ '\ue002' };
-    string     HOME = string{ '\ue011' };
-    string     INSERT = string{ '\ue016' };
-    string     LEFT = string{ '\ue012' };
-    string     LEFT_ALT = string{ '\ue00a' };
-    string     LEFT_CONTROL = string{ '\ue009' };
-    string     LEFT_SHIFT = string{ '\ue008' };
-    string     META = string{ '\ue03d' };
-    string     MULTIPLY = string{ '\ue024' };
-    string     NUMPAD0 = string{ '\ue01a' };
-    string     NUMPAD1 = string{ '\ue01b' };
-    string     NUMPAD2 = string{ '\ue01c' };
-    string     NUMPAD3 = string{ '\ue01d' };
-    string     NUMPAD4 = string{ '\ue01e' };
-    string     NUMPAD5 = string{ '\ue01f' };
-    string     NUMPAD6 = string{ '\ue020' };
-    string     NUMPAD7 = string{ '\ue021' };
-    string     NUMPAD8 = string{ '\ue022' };
-    string     NUMPAD9 = string{ '\ue023' };
-    string     PAGE_DOWN = string{ '\ue00f' };
-    string     PAGE_UP = string{ '\ue00e' };
-    string     PAUSE = string{ '\ue00b' };
-    string     RETURN = string{ '\ue006' };
-    string     RIGHT = string{ '\ue014' };
-    string     SEMICOLON = string{ '\ue018' };
-    string     SEPARATOR = string{ '\ue026' };
-    string     SHIFT = string{ '\ue008' };
-    string     SPACE = string{ '\ue00d' };
-    string     SUBTRACT = string{ '\ue027' };
-    string     TAB = string{ '\ue004' };
-    string     UP = string{ '\ue013' };
-}
+
 inline int  __initialize_path(string __file) {
     file = __file;
     /* This is a way to get the current directory of the notebook. */

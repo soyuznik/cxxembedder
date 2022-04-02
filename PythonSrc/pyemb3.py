@@ -123,8 +123,12 @@ def click_ELEMENT(ELEMNUMBER):
 
 def type_ELEMENT(ELEMNUMBER , TEXT):
     global elements_list;
-    if(TEXT == "u/ENTER"):
-        TEXT = key_list.get('ENTER');
+    for key in key_list:
+        if (TEXT == f"u/{key}"):
+            TEXT = key_list.get(key);
+
+
+
     elements_list[int(ELEMNUMBER)].send_keys(TEXT)
 
 def driver_QUIT():
