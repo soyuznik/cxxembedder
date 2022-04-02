@@ -11,10 +11,11 @@ import chromedriver_autoinstaller
 
 chromedriver_autoinstaller.install()
 
-global option
+option = ""
+__elements = 0;
 driver = ""
 elements_list = []
-
+objectnr_dict = {}
 key_list = {
  'NULL' :  u'\ue000',
  'CANCEL:' : u'\ue001'  ,
@@ -74,70 +75,180 @@ key_list = {
  'COMMAND' : u'\ue03d'
 }
 
-def init_selenium(param):
-    options = Options()
-    if not param == "":
-        paramlist = param.split(" ");
-    else:
-        print("init_selenium --NO ARGS")
-    if "headless" in paramlist:
-        options.add_argument("--headless")
-        print("init_selenium --HEADLESS")
+def GET__elements():
+    return __elements;
 
+
+
+def cclick(objectnr):
+    elements_list(objectnr).click()
+
+
+def cProxy():
     global driver;
-    driver = webdriver.Chrome(options=options)
-
-
-def get_search(PATH):
+    driver = webdriver.Proxy();
+def cRemote():
     global driver;
-    if not PATH == "":
-        driver.get(PATH)
-    else:
-        print("get_search --NO PATH SPECIFIED")
-
-
-def wait_elem_XPATH(ELEMDATA , TIME):
+    driver = webdriver.Remote();
+def cPhantomJS():
     global driver;
-    try:
-        element1 = WebDriverWait(driver, int(TIME)).until(
-            EC.presence_of_element_located((By.XPATH, ELEMDATA)))
-    except:
-        print("wait_elem_XPATH --INVALID ARGS")
-
-def get_elem_XPATH(ELEMDATA):
+    driver = webdriver.PhantomJS();
+def cFirefox():
     global driver;
-    element3 = driver.find_element_by_xpath(ELEMDATA)
-    global elements_list;
-    elements_list.append(element3);
-
-
-def get_elem_NAME(ELEMDATA):
+    driver = webdriver.Firefox();
+def cChrome():
     global driver;
-    element3 = driver.find_element_by_name(ELEMDATA)
-    #global elements_list;
-    elements_list.append(element3);
-
-def click_ELEMENT(ELEMNUMBER):
-    global elements_list;
-    elements_list[int(ELEMNUMBER)].click()
-
-def type_ELEMENT(ELEMNUMBER , TEXT):
-    global elements_list;
-    for key in key_list:
-        if (TEXT == f"u/{key}"):
-            TEXT = key_list.get(key);
-
-
-
-    elements_list[int(ELEMNUMBER)].send_keys(TEXT)
-
-def driver_QUIT():
+    driver = webdriver.Chrome();
+def cIe():
     global driver;
-    driver.quit()
+    driver = webdriver.Ie();
+def cOpera():
+    global driver;
+    driver = webdriver.Opera();
 
 
-def driver_WAIT(sec):
-    driver.implicitly_wait(int(sec)) # seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# get webbrowser link
+def cget(path):
+    driver.get(path)
+
+
+
+
+# single element appending
+def cfind_element_by_id(name):
+    global __elements;
+    element = driver.find_element_by_id(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+def cfind_element_by_name(name):
+    global __elements;
+    element = driver.find_element_by_name(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+def cfind_element_by_xpath(name):
+    global __elements;
+    element = driver.find_element_by_xpath(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+def cfind_element_by_link_text(name):
+    global __elements;
+    element = driver.find_element_by_link_text(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+def cfind_element_by_partial_link_text(name):
+    global __elements;
+    element = driver.find_element_by_partial_link_text(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+def cfind_element_by_tag_name(name):
+    global __elements;
+    element = driver.find_element_by_tag_name(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+def cfind_element_by_class_name(name):
+    global __elements;
+    element = driver.find_element_by_class_name(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+def cfind_element_by_css_selector(name):
+    global __elements;
+    element = driver.find_element_by_css_selector(name)
+    elements_list.append(element);
+    objectnr_dict[__elements] = name;
+    __elements = + 1;
+
+
+# multiple element appending
+def cfind_elements_by_css_selector(name):
+    global __elements;
+    elements = driver.find_elements_by_css_selector(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements =+ 1;
+
+
+def cfind_elements_by_id(name):
+    global __elements;
+    elements = driver.find_element_by_id(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+def cfind_elements_by_name(name):
+    global __elements;
+    elements = driver.find_element_by_name(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+def cfind_elements_by_xpath(name):
+    global __elements;
+    elements = driver.find_element_by_xpath(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+def cfind_elements_by_link_text(name):
+    global __elements;
+    elements = driver.find_element_by_link_text(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+def cfind_elements_by_partial_link_text(name):
+    global __elements;
+    elements = driver.find_element_by_partial_link_text(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+def cfind_elements_by_tag_name(name):
+    global __elements;
+    elements = driver.find_element_by_tag_name(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+def cfind_elements_by_class_name(name):
+    global __elements;
+    elements = driver.find_element_by_class_name(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+def cfind_elements_by_css_selector(name):
+    global __elements;
+    elements = driver.find_element_by_css_selector(name)
+    for element in elements:
+        list.append(element);
+        objectnr_dict[elements] = name;
+        __elements = + 1;
+
+
 
 
 

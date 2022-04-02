@@ -21,6 +21,9 @@
     <ClCompile Include="MAIN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CSelenium.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="PythonSrc\pyemb3.py">
@@ -32,5 +35,13 @@
     <None Include="PythonSrc\pyemb2.py">
       <Filter>Python Source</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\python\pyhelper.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSelenium.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -119,12 +119,17 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CSelenium.cpp" />
     <ClCompile Include="MAIN.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PythonSrc\pyemb1.py" />
     <None Include="PythonSrc\pyemb2.py" />
     <None Include="PythonSrc\pyemb3.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSelenium.h" />
+    <ClInclude Include="include\python\pyhelper.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
