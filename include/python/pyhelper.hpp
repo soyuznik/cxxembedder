@@ -26,18 +26,18 @@ public:
 
 
 using namespace std;
-#define PYSRCDIR "/PythonSrc/"
+#define PYSRCDIR 
 
 static PyObject* pModule;
 static PyObject* pName;
 static int i;
-static string file;
+string file;
 
 
 
-
-inline int  __initialize_path(string __file) {
-    file = __file;
+//set PATH to the script
+inline int  __initialize_path(string path__) {
+    
     /* This is a way to get the current directory of the notebook. */
     std::filesystem::path path = std::filesystem::current_path();
     std::string _path = path.string();
@@ -50,13 +50,9 @@ inline int  __initialize_path(string __file) {
         cout << "cpp >> INITIALIZE with <Py_Initialize();> first\n";
         return -1;
     }
-    PyRun_SimpleString((string("sys.path.append(\"") + _path + string(PYSRCDIR) + string("\")")).c_str());
+    PyRun_SimpleString((string("sys.path.append(\"") + _path + string(path__) + string("\")")).c_str());
 
-    pName = PyUnicode_DecodeFSDefault(file.c_str());
-    /* Error checking of pName left out */
-
-    pModule = PyImport_Import(pName);
-    Py_DECREF(pName);
+    
 
     return 0;
 }
@@ -157,6 +153,7 @@ inline int __callpy_warg(string funcptr, vector<string>* args) {
 
     return 0;
 }
+//calls py function and gets its arg
 inline std::string __callpy_getarg(string funcptr) {
     PyObject* pFunc;
     PyObject* pValue;
