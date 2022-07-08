@@ -5,6 +5,7 @@
 
 #define START_PYTHON CPyInstance inst; __initialize_path("/PythonSrc/");
 #define RUN_PYTHON(x) PyRun_SimpleString(#x);
+
 int main()
 {
     START_PYTHON
@@ -21,7 +22,4 @@ int main()
     driver = webdriver.Chrome();
     driver.get("https://www.google.com/");
     );
-
-   
-
 }
