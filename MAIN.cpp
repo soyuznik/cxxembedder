@@ -1,10 +1,6 @@
+#include "python/pyhelper.hpp"
 
 
-#define PY_SSIZE_T_CLEAN
-#include <python/pyhelper.hpp>
-
-#define START_PYTHON CPyInstance inst; __initialize_path("/PythonSrc/");
-#define RUN_PYTHON(x) PyRun_SimpleString(#x);
 
 int main()
 {
