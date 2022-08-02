@@ -1,21 +1,18 @@
-#include "python/pyhelper.hpp"
+#include "python/__CXX_EMBED_HELPER.hpp"
+#include <iostream>
 
+using namespace std;
+
+void caller(){
+    embed_language("python"){
+       run("print('hi')");
+    }
+}
 
 
 int main()
 {
-    START_PYTHON
-    RUN_PYTHON(
-    from selenium.webdriver.chrome.options import Options;
-    from selenium import webdriver;
-    from selenium.webdriver.common.by import By;
-    from selenium.webdriver.support.ui import WebDriverWait;
-    from selenium.webdriver.support import expected_conditions as EC;
-    import time;
-    import threading;
-    import chromedriver_autoinstaller;
-    chromedriver_autoinstaller.install();
-    driver = webdriver.Chrome();
-    driver.get("https://www.google.com/");
-    );
+    caller();
+
+    return 0;
 }

@@ -1,6 +1,7 @@
 #ifndef Py_OBJECT_H
 #define Py_OBJECT_H
 
+#include "./pyport.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
