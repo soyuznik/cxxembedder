@@ -27,7 +27,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-
+#include <iomanip>
 
 #ifdef __unix__                    /* __unix__ is usually defined by compilers targeting Unix systems */
 
@@ -100,12 +100,17 @@ public:
         }
     };
 };
-
-
+std::string __manage_raw(std::string raw){
+    raw.erase(raw.begin());
+    raw.erase(raw.end());
+    return raw;
+}
 #define create_scope(x) for(x)
 #define CXXEMBEDDER_instance(x) __CXXEMBEDDERdef CXXEMBEDDERInstance INS = CXXEMBEDDERInstance(x); INS.__run; INS.__run = false
 #define embed_language(x) create_scope(CXXEMBEDDER_instance(x))
 #define embed_language_inscope(x) __CXXEMBEDDERdef CXXEMBEDDERInstance INS = CXXEMBEDDERInstance(x); INS.__run; INS.__run = false
+
+
 /// START PYTHON BEFORE RUN_PYTHON           or          RUN_PYTHONI
 ///                   |(without inline)\           |(run python inline (I))
 // CALL THIS ONLY IN "inline" FUNCTIONS!!!!

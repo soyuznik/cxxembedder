@@ -1,11 +1,11 @@
-#include "python/__CXX_EMBED_HELPER.hpp"
+#include "python/cxxembedder.hpp"
 #include <iostream>
 
 using namespace std;
 
 void caller(){
     embed_language("python"){
-       run("print('hi')");
+       run_inline(print('hi'));
     }
 }
 
@@ -13,6 +13,5 @@ void caller(){
 int main()
 {
     caller();
-
     return 0;
 }
