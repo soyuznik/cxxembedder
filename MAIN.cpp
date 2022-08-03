@@ -1,11 +1,11 @@
-#include "python/cxxembedder.hpp"
+#include "cxxembedder.hpp"
 #include <iostream>
 
 using namespace std;
 
 void caller(){
-    embed_language("python"){
-       run_inline(print('hi'));
+    embed_language("lua"){
+       run("print('andrei')");
     }
 }
 

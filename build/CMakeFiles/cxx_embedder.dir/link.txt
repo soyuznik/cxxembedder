@@ -1,0 +1,3 @@
+D:\cmake-gui-x64\cmake-3.23.0-rc1-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\cxx_embedder.dir/objects.a
+D:\Qt\Tools\mingw810_64\bin\ar.exe qc CMakeFiles\cxx_embedder.dir/objects.a @CMakeFiles\cxx_embedder.dir\objects1.rsp
+D:\Qt\Tools\mingw810_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\cxx_embedder.dir/objects.a -Wl,--no-whole-archive -o cxx_embedder.exe -Wl,--out-implib,libcxx_embedder.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cxx_embedder.dir\linklibs.rsp
