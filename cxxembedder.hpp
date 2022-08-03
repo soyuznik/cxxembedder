@@ -36,9 +36,7 @@ extern "C"{
 #include "cxxembedder/lua-mingw64_v5.4.2/include/lauxlib.h"
 #include "cxxembedder/lua-mingw64_v5.4.2/include/lualib.h"
 }
-#ifdef _WIN32
-#pragma comment(lib , "cxxembeddder/_cxxlib/liblua53.a")
-#endif
+
 
 ///////////////////////
 #include <conio.h>
@@ -50,16 +48,16 @@ extern "C"{
 
 #define __CXXcall  static inline
 #define __CXXdef  static
+#define __CXXsdef  static inline
 #define __CXXERROR(x)  std::cerr << x << std::endl;
 #define PY_SSIZE_T_CLEAN
 
 
 #ifdef __unix__                    /* __unix__ is usually defined by compilers targeting Unix systems */
-
     #define IS_OS_WINDOWS 0
     #include <unistd.h>
 #elif defined(_WIN32) || defined(WIN32)     /* _Win32 is usually defined by compilers targeting 32 or   64 bit Windows systems */
-#define IS_OS_WINDOWS 1
+#define __IS_OS_WINDOWS 1
 #include <direct.h>
 // Microsoft wants us to use _getcwd instead of getcwd, which breaks POSIX
 // compatibility. See the following link for more information:
@@ -100,20 +98,33 @@ __CXXcall void  py__initialize_path(std::string path__) {
 
     return;
 };
+
+__CXXcall std::string __manage_lowercase_match(std::string data){
+    std::transform(data.begin(), data.end(), data.begin(),
+        [](unsigned char c){ return std::tolower(c); });
+    return data;
+}
+#define __CXXmatch(x) __manage_lowercase_match(x)
 ///////////////////////////////////////////////////////////////////
 /// header only global variables                              ////
 //////////////////////////////////////////////////////////////////
-__CXXdef std::string LANGUAGE;
-__CXXdef lua_State *LuaInstance;
+
+
+
+
+
 /////////////////////////////////////////////////////////////////
 
 
 class CXXEInstance
 {
+private:
+    __CXXsdef std::string LANGUAGE;
+    __CXXsdef lua_State *LuaInstance;
 public:
     bool __run = true;
     __CXXcall void __manage_run_call(std::string __raw_string_literal){
-        if(LANGUAGE == "Python" || LANGUAGE == "python"){
+        if(__CXXmatch(LANGUAGE) == "python"){
             int handle = PyRun_SimpleString(__raw_string_literal.c_str());
             if(handle != 0){ //failure
                 __CXXERROR("[ERROR] Python exception")
@@ -121,7 +132,7 @@ public:
                 __CXXERROR("PyRun_SimpleString() error");
             }
         }
-        if(LANGUAGE == "Lua" || LANGUAGE == "lua"){
+        if(__CXXmatch(LANGUAGE) == "lua"){
             int handle = luaL_dostring(LuaInstance, __raw_string_literal.c_str());
             if(handle != LUA_OK){
                 __CXXERROR("[ERROR] " << lua_tostring(LuaInstance , -1))
@@ -133,12 +144,12 @@ public:
     CXXEInstance(const std::string __argL)
 	{
         LANGUAGE = __argL;
-        if(LANGUAGE == "Python" || LANGUAGE == "python"){
+        if(__CXXmatch(LANGUAGE) == "python"){
              Py_Initialize(); // create scope instance
              py__initialize_path(PYSRCDIR);
              delete LuaInstance;
         }
-        if(LANGUAGE == "Lua" || LANGUAGE == "lua"){
+        if(__CXXmatch(LANGUAGE) == "lua"){
            LuaInstance = luaL_newstate(); // create instance
            luaL_openlibs(LuaInstance);
 
@@ -148,7 +159,7 @@ public:
     };
 
     ~CXXEInstance(){
-        if(LANGUAGE == "Python" || LANGUAGE == "python"){
+        if(__CXXmatch(LANGUAGE) == "python"){
              Py_Finalize();
         }
     };

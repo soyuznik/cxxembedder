@@ -5,7 +5,7 @@ using namespace std;
 
 void caller(){
     embed_language("lua"){
-       run("print('andrei')");
+       run("print('hi lua')");
     }
 }
 
