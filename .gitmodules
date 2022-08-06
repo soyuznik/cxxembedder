@@ -1,0 +1,6 @@
+[submodule "dart-sdk"]
+	path = dart-sdk
+	url = https://github.com/dart-lang/sdk.git
+[submodule "EMBEDDER_IN_CXX/cxxembedder/jxcore"]
+	path = EMBEDDER_IN_CXX/cxxembedder/jxcore
+	url = https://github.com/jxcore/jxcore.git
