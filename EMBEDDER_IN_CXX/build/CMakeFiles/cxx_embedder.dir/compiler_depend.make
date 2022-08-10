@@ -3,10 +3,7 @@
 
 CMakeFiles/cxx_embedder.dir/main.cpp.obj: ../main.cpp \
   ../cxxembedder.hpp \
-  ../cxxembedder/python/Python.h \
-  ../cxxembedder/python/patchlevel.h \
-  ../cxxembedder/python/pyconfig.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/io.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/conio.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/crtdefs.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -14,186 +11,11 @@ CMakeFiles/cxx_embedder.dir/main.cpp.obj: ../main.cpp \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/string.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdio.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/swprintf.inl \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  ../cxxembedder/python/pymacconfig.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/limits.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/errno.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/conio_s.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdlib.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/malloc.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stddef.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/assert.h \
-  ../cxxembedder/python/pyport.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/inttypes.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdint.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/math.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/time.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_timeval.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/timeb.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_time.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/stat.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/types.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  ../cxxembedder/python/exports.h \
-  ../cxxembedder/python/pymacro.h \
-  ../cxxembedder/python/pymath.h \
-  ../cxxembedder/python/pytime.h \
-  ../cxxembedder/python/object.h \
-  ../cxxembedder/python/pyport.h \
-  ../cxxembedder/python/cpython/object.h \
-  ../cxxembedder/python/pymem.h \
-  ../cxxembedder/python/cpython/pymem.h \
-  ../cxxembedder/python/objimpl.h \
-  ../cxxembedder/python/cpython/objimpl.h \
-  ../cxxembedder/python/typeslots.h \
-  ../cxxembedder/python/pyhash.h \
-  ../cxxembedder/python/pydebug.h \
-  ../cxxembedder/python/bytearrayobject.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdarg.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  ../cxxembedder/python/cpython/bytearrayobject.h \
-  ../cxxembedder/python/bytesobject.h \
-  ../cxxembedder/python/cpython/bytesobject.h \
-  ../cxxembedder/python/unicodeobject.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/ctype.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  ../cxxembedder/python/cpython/unicodeobject.h \
-  ../cxxembedder/python/longobject.h \
-  ../cxxembedder/python/longintrepr.h \
-  ../cxxembedder/python/boolobject.h \
-  ../cxxembedder/python/floatobject.h \
-  ../cxxembedder/python/complexobject.h \
-  ../cxxembedder/python/rangeobject.h \
-  ../cxxembedder/python/memoryobject.h \
-  ../cxxembedder/python/tupleobject.h \
-  ../cxxembedder/python/cpython/tupleobject.h \
-  ../cxxembedder/python/listobject.h \
-  ../cxxembedder/python/cpython/listobject.h \
-  ../cxxembedder/python/dictobject.h \
-  ../cxxembedder/python/cpython/dictobject.h \
-  ../cxxembedder/python/odictobject.h \
-  ../cxxembedder/python/enumobject.h \
-  ../cxxembedder/python/setobject.h \
-  ../cxxembedder/python/methodobject.h \
-  ../cxxembedder/python/cpython/methodobject.h \
-  ../cxxembedder/python/moduleobject.h \
-  ../cxxembedder/python/funcobject.h \
-  ../cxxembedder/python/classobject.h \
-  ../cxxembedder/python/fileobject.h \
-  ../cxxembedder/python/cpython/fileobject.h \
-  ../cxxembedder/python/pycapsule.h \
-  ../cxxembedder/python/code.h \
-  ../cxxembedder/python/cpython/code.h \
-  ../cxxembedder/python/pyframe.h \
-  ../cxxembedder/python/traceback.h \
-  ../cxxembedder/python/cpython/traceback.h \
-  ../cxxembedder/python/sliceobject.h \
-  ../cxxembedder/python/cellobject.h \
-  ../cxxembedder/python/iterobject.h \
-  ../cxxembedder/python/genobject.h \
-  ../cxxembedder/python/pystate.h \
-  ../cxxembedder/python/cpython/pystate.h \
-  ../cxxembedder/python/cpython/initconfig.h \
-  ../cxxembedder/python/descrobject.h \
-  ../cxxembedder/python/genericaliasobject.h \
-  ../cxxembedder/python/warnings.h \
-  ../cxxembedder/python/weakrefobject.h \
-  ../cxxembedder/python/structseq.h \
-  ../cxxembedder/python/namespaceobject.h \
-  ../cxxembedder/python/picklebufobject.h \
-  ../cxxembedder/python/codecs.h \
-  ../cxxembedder/python/pyerrors.h \
-  ../cxxembedder/python/cpython/pyerrors.h \
-  ../cxxembedder/python/cpython/initconfig.h \
-  ../cxxembedder/python/pythread.h \
-  ../cxxembedder/python/context.h \
-  ../cxxembedder/python/pyarena.h \
-  ../cxxembedder/python/modsupport.h \
-  ../cxxembedder/python/compile.h \
-  ../cxxembedder/python/pythonrun.h \
-  ../cxxembedder/python/pylifecycle.h \
-  ../cxxembedder/python/cpython/pylifecycle.h \
-  ../cxxembedder/python/ceval.h \
-  ../cxxembedder/python/cpython/ceval.h \
-  ../cxxembedder/python/sysmodule.h \
-  ../cxxembedder/python/cpython/sysmodule.h \
-  ../cxxembedder/python/osmodule.h \
-  ../cxxembedder/python/intrcheck.h \
-  ../cxxembedder/python/import.h \
-  ../cxxembedder/python/cpython/import.h \
-  ../cxxembedder/python/abstract.h \
-  ../cxxembedder/python/cpython/abstract.h \
-  ../cxxembedder/python/bltinmodule.h \
-  ../cxxembedder/python/eval.h \
-  ../cxxembedder/python/pyctype.h \
-  ../cxxembedder/python/pystrtod.h \
-  ../cxxembedder/python/pystrcmp.h \
-  ../cxxembedder/python/fileutils.h \
-  ../cxxembedder/python/cpython/fileutils.h \
-  ../cxxembedder/python/pyfpe.h \
-  ../cxxembedder/python/tracemalloc.h \
-  ../cxxembedder/lua-mingw64_v5.4.2/include/lua.h \
-  ../cxxembedder/lua-mingw64_v5.4.2/include/luaconf.h \
-  ../cxxembedder/lua-mingw64_v5.4.2/include/lauxlib.h \
-  ../cxxembedder/lua-mingw64_v5.4.2/include/lua.h \
-  ../cxxembedder/lua-mingw64_v5.4.2/include/lualib.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/conio.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/conio_s.h \
-  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
@@ -201,30 +23,68 @@ CMakeFiles/cxx_embedder.dir/main.cpp.obj: ../main.cpp \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/swprintf.inl \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stddef.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdint.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/locale.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdio.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/ctype.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/errno.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/types.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/process.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/limits.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/signal.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_signal.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/timeb.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_compat.h \
   D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_unistd.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
@@ -243,9 +103,16 @@ CMakeFiles/cxx_embedder.dir/main.cpp.obj: ../main.cpp \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdlib.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/malloc.h \
+  D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
@@ -280,6 +147,9 @@ CMakeFiles/cxx_embedder.dir/main.cpp.obj: ../main.cpp \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/locale \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets_nonio.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/time.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_timeval.h \
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_time.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
@@ -296,23 +166,29 @@ CMakeFiles/cxx_embedder.dir/main.cpp.obj: ../main.cpp \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/quoted_string.h \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream \
   D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
-  ../cxxembedder/angelscript/include/angelscript.h \
-  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/direct.h
+  D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/assert.h \
+  ../cxxembedder/angelscript/include/angelscript.h
 
-
-../cxxembedder/python/pyconfig.h:
-
-../cxxembedder/python/ceval.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/inttypes.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_stat64.h:
 
 ../main.cpp:
 
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_stat64.h:
+
 ../cxxembedder.hpp:
 
-../cxxembedder/python/unicodeobject.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/conio.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/crtdefs.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h:
 
@@ -322,449 +198,55 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw.h:
 
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath:
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/vadefs.h:
 
-../cxxembedder/python/bytesobject.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h:
 
-../cxxembedder/python/Python.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/crtdefs.h:
-
-../cxxembedder/python/patchlevel.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/io.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h:
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_mac.h:
 
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdio.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_secapi.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/vadefs.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h:
-
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h:
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h:
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/conio_s.h:
 
-../cxxembedder/python/structseq.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:
 
-../cxxembedder/python/cpython/bytesobject.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h:
 
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/string.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
-
-../cxxembedder/python/cpython/object.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/string_s.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stddef.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_off_t.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h:
 
-../cxxembedder/python/cpython/ceval.h:
-
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_print_push.h:
 
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
 
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/swprintf.inl:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
 
-../cxxembedder/python/eval.h:
-
-../cxxembedder/python/pymacconfig.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdlib.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/limits.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/errno.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/algorithm:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf:
 
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:
-
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib:
 
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h:
-
-../cxxembedder/python/floatobject.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
-
-../cxxembedder/python/cpython/methodobject.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/locale:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/malloc.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h:
-
-../cxxembedder/python/context.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/assert.h:
-
-../cxxembedder/python/pyport.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdint.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/math.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/math.h:
-
-../cxxembedder/python/cpython/pymem.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_compat.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc:
-
-../cxxembedder/python/cpython/pystate.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/time.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_timeval.h:
-
-../cxxembedder/python/memoryobject.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/timeb.h:
-
-../cxxembedder/python/pythread.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
-
-../cxxembedder/python/tracemalloc.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_time.h:
-
-../cxxembedder/lua-mingw64_v5.4.2/include/lualib.h:
-
-../cxxembedder/python/pyhash.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/stat.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/types.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
-
-../cxxembedder/python/cpython/fileobject.h:
-
-../cxxembedder/python/exports.h:
-
-../cxxembedder/python/pymacro.h:
-
-../cxxembedder/python/pymath.h:
-
-../cxxembedder/python/pyfpe.h:
-
-../cxxembedder/python/pytime.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:
-
-../cxxembedder/python/object.h:
-
-../cxxembedder/python/pymem.h:
-
-../cxxembedder/python/objimpl.h:
-
-../cxxembedder/python/cpython/objimpl.h:
-
-../cxxembedder/python/genobject.h:
-
-../cxxembedder/python/typeslots.h:
-
-../cxxembedder/python/pydebug.h:
-
-../cxxembedder/python/pyctype.h:
-
-../cxxembedder/python/bytearrayobject.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdarg.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
-
-../cxxembedder/python/cpython/bytearrayobject.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/ctype.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint:
-
-../cxxembedder/python/cpython/unicodeobject.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept:
-
-../cxxembedder/python/longobject.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno:
-
-../cxxembedder/python/longintrepr.h:
-
-../cxxembedder/python/cpython/listobject.h:
-
-../cxxembedder/python/boolobject.h:
-
-../cxxembedder/python/complexobject.h:
-
-../cxxembedder/python/pyarena.h:
-
-../cxxembedder/python/rangeobject.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:
-
-../cxxembedder/python/codecs.h:
-
-../cxxembedder/python/tupleobject.h:
-
-../cxxembedder/python/cpython/tupleobject.h:
-
-../cxxembedder/python/listobject.h:
-
-../cxxembedder/python/dictobject.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:
-
-../cxxembedder/python/cpython/dictobject.h:
-
-../cxxembedder/python/odictobject.h:
-
-../cxxembedder/python/enumobject.h:
-
-../cxxembedder/python/setobject.h:
-
-../cxxembedder/python/methodobject.h:
-
-../cxxembedder/python/moduleobject.h:
-
-../cxxembedder/python/funcobject.h:
-
-../cxxembedder/python/classobject.h:
-
-../cxxembedder/python/fileobject.h:
-
-../cxxembedder/python/pycapsule.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
-
-../cxxembedder/python/code.h:
-
-../cxxembedder/python/cpython/code.h:
-
-../cxxembedder/python/pyframe.h:
-
-../cxxembedder/python/traceback.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h:
-
-../cxxembedder/python/cpython/traceback.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/conio.h:
-
-../cxxembedder/python/sliceobject.h:
-
-../cxxembedder/python/pylifecycle.h:
-
-../cxxembedder/python/cellobject.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h:
-
-../cxxembedder/python/iterobject.h:
-
-../cxxembedder/python/pystate.h:
-
-../cxxembedder/python/cpython/initconfig.h:
-
-../cxxembedder/python/descrobject.h:
-
-../cxxembedder/python/genericaliasobject.h:
-
-../cxxembedder/python/warnings.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h:
-
-../cxxembedder/python/weakrefobject.h:
-
-../cxxembedder/python/namespaceobject.h:
-
-../cxxembedder/python/picklebufobject.h:
-
-../cxxembedder/python/pyerrors.h:
-
-../cxxembedder/python/cpython/pyerrors.h:
-
-../cxxembedder/python/modsupport.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new:
-
-../cxxembedder/python/compile.h:
-
-../cxxembedder/python/pythonrun.h:
-
-../cxxembedder/python/cpython/pylifecycle.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc:
-
-../cxxembedder/python/sysmodule.h:
-
-../cxxembedder/python/cpython/sysmodule.h:
-
-../cxxembedder/python/osmodule.h:
-
-../cxxembedder/python/intrcheck.h:
-
-../cxxembedder/python/pystrtod.h:
-
-../cxxembedder/python/import.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h:
-
-../cxxembedder/python/cpython/import.h:
-
-../cxxembedder/python/abstract.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:
-
-../cxxembedder/python/cpython/abstract.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
-
-../cxxembedder/python/bltinmodule.h:
-
-../cxxembedder/python/pystrcmp.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_conv.h:
-
-../cxxembedder/python/fileutils.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h:
-
-../cxxembedder/python/cpython/fileutils.h:
-
-../cxxembedder/lua-mingw64_v5.4.2/include/lua.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h:
-
-../cxxembedder/lua-mingw64_v5.4.2/include/luaconf.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h:
-
-../cxxembedder/lua-mingw64_v5.4.2/include/lauxlib.h:
-
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/conio_s.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/signal.h:
 
@@ -776,17 +258,29 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memory
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stddef.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/swprintf.inl:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:
-
-D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
 
@@ -794,9 +288,51 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/sstream:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint:
+
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/locale.h:
 
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdint.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdio.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/ctype.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:
 
@@ -804,7 +340,15 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomici
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
+
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/errno.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/types.h:
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/process.h:
 
@@ -812,11 +356,29 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio:
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/corecrt_startup.h:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/limits.h:
+
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_signal.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sys/timeb.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_compat.h:
 
 D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_unistd.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:
 
@@ -824,11 +386,41 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloca
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/stdlib.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algo.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/locale:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/malloc.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc:
 
@@ -836,9 +428,23 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
@@ -862,6 +468,12 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iomanip:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets_nonio.h:
 
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/time.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/_timeval.h:
+
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/pthread_time.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
@@ -870,12 +482,18 @@ D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecv
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets_nonio.tcc:
 
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_conv.h:
+
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:
+
+D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h:
 
 D:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc:
 
-../cxxembedder/angelscript/include/angelscript.h:
+D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/assert.h:
 
-D:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/direct.h:
+../cxxembedder/angelscript/include/angelscript.h:

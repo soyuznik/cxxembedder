@@ -18,23 +18,102 @@
 //   TO INCLUDE THE PYTHON .lib
 //   and .dll
 //
+
+#ifdef CXX_EMBED_ALL
+#define CXX_EMBED_PYTHON 1
+#define CXX_EMBED_LUA 1
+#define CXX_EMBED_ANGELSCRIPT 1
+#define CXX_EMBED_JAVASCRIPT 1
+#endif
+
+
+
+
+/////// Core Includes ////////////////
+#include <conio.h>
+#include <iostream>
+#include <algorithm>
+#include <iomanip>
+#include <string>
+#include <assert.h>
+/// Core calls ///
+#define __CXXcall  static inline
+#define __CXXdef  static
+#define __CXXsdef  static inline
+#define __CXXERROR(x)  std::cerr << x << std::endl;
+#define __CXXmatch(x) __manage_lowercase_match(x)
+
+/// Core functions ///
+__CXXcall std::string __manage_lowercase_match(std::string data){
+    std::transform(data.begin(), data.end(), data.begin(),
+        [](unsigned char c){ return std::tolower(c); });
+    return data;
+}
+
+//////////////////////////////////////
+////////// Language Includes ////////
+
+#ifdef CXX_EMBED_PYTHON
+/// Python ///
 #include "cxxembedder/python/Python.h"
 #define PYSRCDIR "python/LIBS/"
-///// LUA ///////
-///  include headers /////
+#define PY_SSIZE_T_CLEAN
+#ifdef __unix__                    /* __unix__ is usually defined by compilers targeting Unix systems */
+    #define IS_OS_WINDOWS 0
+    #include <unistd.h>
+#elif defined(_WIN32) || defined(WIN32)     /* _Win32 is usually defined by compilers targeting 32 or   64 bit Windows systems */
+#define __IS_OS_WINDOWS 1
+#include <direct.h>
+// Microsoft wants us to use _getcwd instead of getcwd, which breaks POSIX
+// compatibility. See the following link for more information:
+// https://stackoverflow.com/questions/7582394/strdup-or-strdup
+// Therefore we must disable the compiler warning if we want to use getcwd
+// to maintain POSIX compatibility. This is accomplished with the following
+// line.
+#pragma warning(disable : 4996)
+#endif
+
+//set PATH to the script // this is for the modules python installs // __path is the location of the modules
+__CXXcall void  py__initialize_path(std::string path__) {
+    std::string _path;
+/*-----ENTER LOCAL SCOPE*/{
+    char cwd[PATH_MAX];
+    if (getcwd(cwd, sizeof(cwd)) == NULL){
+        __CXXERROR("[ERROR] Failed to get current working directory")
+        __CXXERROR("FILE : " << __FILE__ << " / LINE :" << __LINE__ )
+        __CXXERROR("getcwd() error");
+    }
+    _path = cwd;
+/*------EXIT LOCAL SCOPE*/}
+
+    std::replace(_path.begin(), _path.end(), '\\', '/');;
+    try {
+        PyRun_SimpleString("import sys");
+    }
+    catch (...){
+        __CXXERROR("[ERROR] : Python isnt initialized")
+        __CXXERROR("FILE : " << __FILE__ << " / LINE :" << __LINE__)
+        return;
+    };
+    PyRun_SimpleString((std::string("sys.path.append(\"") + _path + std::string(path__) + std::string("\")")).c_str());
+
+
+
+    return;
+};
+#endif
+
+#ifdef CXX_EMBED_LUA
+/// Lua ///
 extern "C"{
 #include "cxxembedder/lua-mingw64_v5.4.2/include/lua.h"
 #include "cxxembedder/lua-mingw64_v5.4.2/include/lauxlib.h"
 #include "cxxembedder/lua-mingw64_v5.4.2/include/lualib.h"
 }
-///////////////////////
-#include <conio.h>
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <iomanip>
+#endif
 
-//angel script
+#ifdef CXX_EMBED_ANGELSCRIPT
+/// Angelscript ///
 namespace angelscript{
 using std::string;
 #include "cxxembedder/angelscript/include/angelscript.h"
@@ -113,104 +192,51 @@ int ExecuteString(asIScriptEngine *engine, const char *code, asIScriptModule *mo
     return ExecuteString(engine, code, 0, asTYPEID_VOID, mod, ctx);
 }
 }//namespace angelscript
-
-#define __CXXcall  static inline
-#define __CXXdef  static
-#define __CXXsdef  static inline
-#define __CXXERROR(x)  std::cerr << x << std::endl;
-#define PY_SSIZE_T_CLEAN
-
-
-#ifdef __unix__                    /* __unix__ is usually defined by compilers targeting Unix systems */
-    #define IS_OS_WINDOWS 0
-    #include <unistd.h>
-#elif defined(_WIN32) || defined(WIN32)     /* _Win32 is usually defined by compilers targeting 32 or   64 bit Windows systems */
-#define __IS_OS_WINDOWS 1
-#include <direct.h>
-// Microsoft wants us to use _getcwd instead of getcwd, which breaks POSIX
-// compatibility. See the following link for more information:
-// https://stackoverflow.com/questions/7582394/strdup-or-strdup
-// Therefore we must disable the compiler warning if we want to use getcwd
-// to maintain POSIX compatibility. This is accomplished with the following
-// line.
-#pragma warning(disable : 4996)
 #endif
 
-
-
-//set PATH to the script // this is for the modules python installs // __path is the location of the modules
-__CXXcall void  py__initialize_path(std::string path__) {
-    std::string _path;
-/*-----ENTER LOCAL SCOPE*/{
-    char cwd[PATH_MAX];
-    if (getcwd(cwd, sizeof(cwd)) == NULL){
-        __CXXERROR("[ERROR] Failed to get current working directory")
-        __CXXERROR("FILE : " << __FILE__ << " / LINE :" << __LINE__ )
-        __CXXERROR("getcwd() error");
-    }
-    _path = cwd;
-/*------EXIT LOCAL SCOPE*/}
-
-    std::replace(_path.begin(), _path.end(), '\\', '/');;
-    try {
-        PyRun_SimpleString("import sys");
-    }
-    catch (...){
-        __CXXERROR("[ERROR] : Python isnt initialized")
-        __CXXERROR("FILE : " << __FILE__ << " / LINE :" << __LINE__)
-        return;
-    };
-    PyRun_SimpleString((std::string("sys.path.append(\"") + _path + std::string(path__) + std::string("\")")).c_str());
-
-
-
-    return;
-};
-
-__CXXcall std::string __manage_lowercase_match(std::string data){
-    std::transform(data.begin(), data.end(), data.begin(),
-        [](unsigned char c){ return std::tolower(c); });
-    return data;
-}
-#define __CXXmatch(x) __manage_lowercase_match(x)
-///////////////////////////////////////////////////////////////////
-/// header only global variables                              ////
-//////////////////////////////////////////////////////////////////
-
-
-
-
-
-/////////////////////////////////////////////////////////////////
-
-
+/// Core class ////
 class CXXEInstance
 {
 private:
     __CXXsdef std::string LANGUAGE;
+#ifdef CXX_EMBED_LUA
     __CXXsdef lua_State *LuaInstance;
+#endif
+
+#ifdef CXX_EMBED_ANGELSCRIPT
     __CXXsdef angelscript::asIScriptEngine *engine;
     __CXXsdef angelscript::asIScriptContext *ctx;
+#endif
 public:
     bool __run = true;
     __CXXcall void __manage_run_call(std::string __raw_string_literal){
         if(__CXXmatch(LANGUAGE) == "python"){
+#ifdef CXX_EMBED_PYTHON
             int handle = PyRun_SimpleString(__raw_string_literal.c_str());
             if(handle != 0){ //failure
                 __CXXERROR("[ERROR] Python exception")
                 __CXXERROR("FILE : " << __FILE__ << " / LINE :" << __LINE__ )
-                __CXXERROR("PyRun_SimpleString() error");
-            }
+                __CXXERROR("PyRun_SimpleString() error")
+#else
+            __CXXERROR("Python embedding not included (use #define CXX_EMBED_PYTHON)")
+#endif
         }
+
         if(__CXXmatch(LANGUAGE) == "lua"){
+#ifdef CXX_EMBED_LUA
             int handle = luaL_dostring(LuaInstance, __raw_string_literal.c_str());
             if(handle != LUA_OK){
                 __CXXERROR("[ERROR] " << lua_tostring(LuaInstance , -1))
                 __CXXERROR("FILE : " << __FILE__ << " / LINE :" << __LINE__)
                 __CXXERROR("luaL_dostring() error");
-            }
+
+#else
+            __CXXERROR("Lua embedding not included (use #define CXX_EMBED_LUA)")
+#endif
+
         }
         if(__CXXmatch(LANGUAGE) == "angelscript"){
+#ifdef CXX_EMBED_ANGELSCRIPT
             //int ExecuteString(asIScriptEngine *engine, const char *code, void *ret, int retTypeId, asIScriptModule *mod = 0, asIScriptContext *ctx = 0);
             int handle = angelscript::ExecuteString(engine , __raw_string_literal.c_str() ,  NULL , ctx);
             if(handle != 0){
@@ -220,47 +246,63 @@ public:
                 const angelscript::asIScriptFunction *function = ctx->GetExceptionFunction();
                 // Determine the exception that occurred
                 std::string exception = ctx->GetExceptionString();
-                if(exception.empty()){
-                    exception = "Syntax error";
-                }
+                if(exception.empty()) exception = "Syntax error";
                 __CXXERROR(std::string("description: ") + exception                                 );
                 __CXXERROR(std::string("function: ") + function->GetDeclaration()                   );
                 __CXXERROR(std::string("module: ") + function->GetModuleName()                      );
                 __CXXERROR(std::string("section: ") + function->GetScriptSectionName()              );
                 __CXXERROR(std::string("line: ") + std::to_string(ctx->GetExceptionLineNumber())    );
             }
+#else
+            __CXXERROR("AngelScript embedding not included (use #define CXX_EMBED_ANGELSCRIPT)")
+#endif
         }
 
     }
+
     CXXEInstance(const std::string __argL)
 	{
         LANGUAGE = __argL;
+#ifdef CXX_EMBED_PYTHON
         if(__CXXmatch(LANGUAGE) == "python"){
              Py_Initialize(); // create scope instance
              py__initialize_path(PYSRCDIR);
         }
+#endif
+
+#ifdef CXX_EMBED_LUA
         if(__CXXmatch(LANGUAGE) == "lua"){
            LuaInstance = luaL_newstate(); // create instance
            luaL_openlibs(LuaInstance);
         }
+#endif
+
+#ifdef CXX_EMBED_ANGELSCRIPT
         if(__CXXmatch(LANGUAGE) == "angelscript"){
             // Create the script engine
             engine = angelscript::asCreateScriptEngine();
             ctx = engine->CreateContext();
 
         }
+#endif
     };
 
     ~CXXEInstance(){
+#ifdef CXX_EMBED_PYTHON
         if(__CXXmatch(LANGUAGE) == "python"){
              Py_Finalize();
         }
+#endif
+
+#ifdef CXX_EMBED_ANGELSCRIPT
         if(__CXXmatch(LANGUAGE) == "angelscript"){
              ctx->Release();
         }
+#endif
     };
 };
 
+/// Syntax macros ///
 #define create_scope(x) for(x)
 #define __CXXInstance(x) __CXXdef CXXEInstance INS = CXXEInstance(x); INS.__run; INS.__run = false
 #define embed_language(x) create_scope(__CXXInstance(x))
@@ -272,5 +314,7 @@ public:
 // CALL THIS ONLY IN "inline" FUNCTIONS!!!!
 #define run(...) CXXEInstance::__manage_run_call(__VA_ARGS__);
 #define run_inline(...) CXXEInstance::__manage_run_call(#__VA_ARGS__);
+
+
 
 

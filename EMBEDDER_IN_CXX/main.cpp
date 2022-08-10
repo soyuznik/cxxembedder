@@ -1,11 +1,12 @@
+#define CXX_EMBED_ALL 1
 #include "cxxembedder.hpp"
 
 
 using namespace std;
 
 void caller(){
-    embed_language("angelscript"){
-       run("int i = -1;");
+    embed_language("python"){
+       run("print('hi');");
     }
 }
 

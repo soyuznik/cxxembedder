@@ -12,5 +12,5 @@ target_link_libraries(cxx_embedder ${CMAKE_CURRENT_SOURCE_DIR}/cxxembedder/_cxxl
 target_link_libraries(cxx_embedder ${CMAKE_CURRENT_SOURCE_DIR}/cxxembedder/_cxxlib/python39_d.lib)
 target_link_libraries(cxx_embedder ${CMAKE_CURRENT_SOURCE_DIR}/cxxembedder/_cxxlib/liblua54.a)
 target_link_libraries(cxx_embedder ${CMAKE_CURRENT_SOURCE_DIR}/cxxembedder/_cxxlib/libangelscript.mingw.a)
-
+target_link_libraries(cxx_embedder ${CMAKE_CURRENT_SOURCE_DIR}/cxxembedder/_cxxlib/node.lib)
 

@@ -96,6 +96,7 @@ cxx_embedder.exe: ../cxxembedder/_cxxlib/python39.lib
 cxx_embedder.exe: ../cxxembedder/_cxxlib/python39_d.lib
 cxx_embedder.exe: ../cxxembedder/_cxxlib/liblua54.a
 cxx_embedder.exe: ../cxxembedder/_cxxlib/libangelscript.mingw.a
+cxx_embedder.exe: ../cxxembedder/_cxxlib/node.lib
 cxx_embedder.exe: CMakeFiles/cxx_embedder.dir/linklibs.rsp
 cxx_embedder.exe: CMakeFiles/cxx_embedder.dir/objects1.rsp
 cxx_embedder.exe: CMakeFiles/cxx_embedder.dir/link.txt
